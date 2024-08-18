@@ -15,7 +15,7 @@ export const UserRegistrationSchema: ZodType<UserRegistrationProps> = z
     type: z.string().min(1),
     fullname: z
       .string()
-      .min(4, { message: 'your full name must be atleast 4 characters long' }),
+      .min(4, { message: 'Your full name must be atleast 4 characters long' }),
     email: z.string().email({ message: 'Incorrect email format' }),
     confirmEmail: z.string().email(),
     password: z
